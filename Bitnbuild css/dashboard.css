@@ -1,0 +1,91 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the dashboard */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Top Header Bar */
+.header {
+    background-color: #5966e0;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Logout Button Styling - Top Right */
+.logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #e05a5a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #d04a4a;
+}
+
+/* Main content area */
+.main-content {
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Individual category box styling */
+.box {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    width: 250px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.box h2 {
+    font-size: 1.2rem;
+    color: #5966e0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .box {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

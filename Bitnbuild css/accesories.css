@@ -1,0 +1,32 @@
+/* General button styling inside an anchor tag */
+a button {
+    background-color: #2d98da; /* Primary button color (blue) */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Button hover effect */
+a button:hover {
+    background-color: #2271b3; /* Slightly darker shade on hover */
+    box-shadow: 0 8px 20px rgba(45, 152, 218, 0.4); /* Subtle shadow */
+}
+
+/* Button active state */
+a button:active {
+    transform: scale(0.98); /* Slight shrink effect on click */
+}
+
+/* Ensure no underline or link styling for the anchor tag */
+a {
+    text-decoration: none;
+    display: inline-block;
+}
